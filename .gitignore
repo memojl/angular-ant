@@ -1,16 +1,24 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
-
+# Angular files
+package-lock.json
 # Compiled output
 /dist
+/target
 /tmp
 /out-tsc
-/bazel-out
+# Only exists if Bazel was run
+/bazel-out/bazel-out
+
+# Misc.
+package-lock.json
 
 # Node
 /node_modules
 npm-debug.log
 yarn-error.log
 
+# profiling files
+chrome-profiler-events*.json
 # IDEs and editors
 .idea/
 .project
@@ -20,7 +28,8 @@ yarn-error.log
 .settings/
 *.sublime-workspace
 
-# Visual Studio Code
+# IDE - VSCode
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -29,14 +38,23 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
+.vs
+.vs/*
+# misc
 /.angular/cache
-.sass-cache/
+/.sass-cache
 /connect.lock
 /coverage
 /libpeerconnection.log
+npm-debug.log
+yarn-error.log
 testem.log
 /typings
 
-# System files
+# System Files
 .DS_Store
 Thumbs.db
+/Web.config
+Debug
+/Laureate.SIAC.FrontEnd.esproj.user
+/Laureate.SIAC.FrontEnd.esproj
