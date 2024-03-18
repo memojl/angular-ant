@@ -1,0 +1,11 @@
+<div class="container">
+    <input type="text" placeholder="Ingrese nombre" class="form-control" #name />
+
+    <button class="btn btn-primary mt-2" (click)="mostrar(name.value)">Mostrar en consola</button>
+    
+    <div class="alert alert-primary mt-4" *ngIf="openAlert">
+        Se ha enviado el mensaje
+        <button class="btn btn-danger" (click)="openAlert=false">x</button>
+    </div>
+</div>
+
